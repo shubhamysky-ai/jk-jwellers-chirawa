@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Our Collections | Exquisite Gold &amp; Silver - JK Jewellers Chirawa</title>
+    <meta name="description" content="Explore the full collections catalogue of JK Jewellers Chirawa. Fine BIS Hallmarked gold necklaces, sterling silver articles &amp; royal bridal sets.">
+    <link rel="canonical" href="https://jkjewellerschirawa.com/collections.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+    <link rel="apple-touch-icon" href="images/logo.jpeg">
+
+    <!-- CSS / Icons -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Page Loader -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-logo">JK</div>
+        </div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="header-wrapper scrolled" style="position: sticky; top: 0; background: var(--color-primary);">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="JK Jewellers Logo">
+                <div class="logo-text">
+                    <h1>JK JEWELLERS</h1>
+                    <span>Chirawa</span>
+                </div>
+            </a>
+            <button class="hamburger" aria-label="Toggle Navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item active has-mega-menu">
+                    <a href="collections.html" class="nav-link">Collections <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem; margin-left:3px;"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-column">
+                            <h3>Gold Jewellery</h3>
+                            <ul>
+                                <li><a href="gold.html?cat=necklaces">Choker & Necklaces</a></li>
+                                <li><a href="gold.html?cat=bangles">Bangles & Bracelets</a></li>
+                                <li><a href="gold.html?cat=earrings">Earrings & Jhumkas</a></li>
+                                <li><a href="gold.html?cat=chains">Gold Chains & Kadas</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mega-column">
+                            <h3>Silver Jewellery</h3>
+                            <ul>
+                                <li><a href="silver.html?cat=payal">Traditional Payals</a></li>
+                                <li><a href="silver.html?cat=gift">Gifting Articles & Coins</a></li>
+                                <li><a href="silver.html?cat=rings">Silver Rings & Chains</a></li>
+                                <li><a href="silver.html?cat=utensils">Pooja Utensils</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Exclusive Sets</h3>
+                            <ul>
+                                <li><a href="bridal.html">Royal Bridal Collection</a></li>
+                                <li><a href="collections.html?cat=temple">Temple Jewellery</a></li>
+                                <li><a href="collections.html?cat=daily">Daily Wear Minimal</a></li>
+                                <li><a href="collections.html?cat=kids">Kids Collection</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-featured">
+                            <h4>Royal Heritage</h4>
+                            <p>Exquisite craftsmanship of Rajasthan</p>
+                            <a href="bridal.html" class="btn btn-primary" style="padding: 6px 12px; font-size: 0.65rem;">Explore</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="gold.html" class="nav-link">Gold</a></li>
+
+                <li class="nav-item"><a href="silver.html" class="nav-link">Silver</a></li>
+                <li class="nav-item"><a href="blogs.html" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs" style="margin-top: 0;">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Our Collections</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Catalog Section -->
+    <section class="section">
+        <div class="container">
+            <h1 style="text-align: center; font-family: var(--font-heading); color: var(--color-primary); font-size: 3rem; margin-bottom: 10px;">Our Exquisite Catalog</h1>
+            <div class="luxury-divider"><span>♦</span></div>
+
+            <!-- Interactive Filters -->
+            <div class="catalog-filters reveal fade-up">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All Items</button>
+                    <button class="filter-btn" data-filter="gold">Gold Jewellery</button>
+                    <button class="filter-btn" data-filter="silver">Silver Ornaments</button>
+                    <button class="filter-btn" data-filter="bridal">Bridal Wear</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="best-sellers-slider" id="productsGrid" style="grid-template-columns: repeat(4, 1fr); gap: 30px;">
+                <!-- Product 1 -->
+                <div class="product-card reveal fade-up" data-category="gold" data-price="185000">
+                    <div class="product-image">
+                        <span class="product-badge">Best Seller</span>
+                        <img src="images/neckless.jpg" alt="Royal Kundan Choker Gold">
+                    </div>
+                    <div class="product-details">
+                        <h3>Royal Kundan Choker</h3>
+                        <p>Beautiful Jadau Kundan work on pure 22K gold frame.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/919784715709?text=Hi%20JK%20Jewellers,%20I'm%20interested%20in%20the%20Royal%20Kundan%20Choker." target="_blank" class="btn-whatsapp-inquiry"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                            <a href="tel:9784715709" class="btn-call-inquiry"><i class="fa-solid fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card reveal fade-up delay-1" data-category="gold" data-price="45000">
+                    <div class="product-image">
+                        <span class="product-badge">Exclusive</span>
+                        <img src="images/penden.jpg" alt="Antique Gold Ring">
+                    </div>
+                    <div class="product-details">
+                        <h3>Antique Gold Ring</h3>
+                        <p>Classic 22K Yellow Gold band featuring floral designs and a red ruby center stone.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/919784715709?text=Hi%20JK%20Jewellers,%20I'm%20interested%20in%20the%20Antique%20Gold%20Ring." target="_blank" class="btn-whatsapp-inquiry"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                            <a href="tel:9784715709" class="btn-call-inquiry"><i class="fa-solid fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card reveal fade-up delay-2" data-category="silver" data-price="22000">
+                    <div class="product-image">
+                        <span class="product-badge">92.5 Silver</span>
+                        <img src="images/neckless1.jpg" alt="Traditional Silver Payal">
+                    </div>
+                    <div class="product-details">
+                        <h3>Bridal Silver Payal</h3>
+                        <p>Traditional detailed anklet in pure sterling silver layout.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/919784715709?text=Hi%20JK%20Jewellers,%20I'm%20interested%20in%20the%20Bridal%20Silver%20Payal." target="_blank" class="btn-whatsapp-inquiry"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                            <a href="tel:9784715709" class="btn-call-inquiry"><i class="fa-solid fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card reveal fade-up delay-3" data-category="bridal" data-price="550000">
+                    <div class="product-image">
+                        <span class="product-badge">Royal Bridal</span>
+                        <img src="images/WhatsApp Image 2026-07-02 at 7.49.54 AM.jpeg" alt="Royal Heritage Bridal Haar">
+                    </div>
+                    <div class="product-details">
+                        <h3>Heritage Kundan Haar</h3>
+                        <p>Heavy wedding collection multi-layer Polki necklace set.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/919784715709?text=Hi%20JK%20Jewellers,%20I'm%20interested%20in%20the%20Heritage%20Kundan%20Haar." target="_blank" class="btn-whatsapp-inquiry"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                            <a href="tel:9784715709" class="btn-call-inquiry"><i class="fa-solid fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card reveal fade-up" data-category="gold" data-price="85000">
+                    <div class="product-image">
+                        <span class="product-badge">Trending</span>
+                        <img src="images/neckless with jhumka.jpeg" alt="Imperial Gold Jhumki">
+                    </div>
+                    <div class="product-details">
+                        <h3>Imperial Gold Jhumkas</h3>
+                        <p>Delicate hand-carved Jhumkas with hanging south sea pearls.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/919784715709?text=Hi%20JK%20Jewellers,%20I'm%20interested%20in%20the%20Imperial%20Gold%20Jhumkas." target="_blank" class="btn-whatsapp-inquiry"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                            <a href="tel:9784715709" class="btn-call-inquiry"><i class="fa-solid fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card reveal fade-up delay-1" data-category="gold" data-price="95000">
+                    <div class="product-image">
+                        <span class="product-badge">New Arrival</span>
+                        <img src="images/mangalsutra.jpeg" alt="Traditional Gold Mangalsutra">
+                    </div>
+                    <div class="product-details">
+                        <h3>Traditional Gold Mangalsutra</h3>
+                        <p>Exquisite 22K gold Mangalsutra featuring traditional black beads and a beautifully crafted pendant.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/919784715709?text=Hi%20JK%20Jewellers,%20I'm%20interested%20in%20the%20Traditional%20Gold%20Mangalsutra." target="_blank" class="btn-whatsapp-inquiry"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                            <a href="tel:9784715709" class="btn-call-inquiry"><i class="fa-solid fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card reveal fade-up delay-2" data-category="silver" data-price="15000">
+                    <div class="product-image">
+                        <span class="product-badge">Pure Silver</span>
+                        <img src="images/jwellery.jpeg" alt="Sterling Silver Pooja Thali">
+                    </div>
+                    <div class="product-details">
+                        <h3>Sterling Silver Pooja Thali</h3>
+                        <p>Beautiful engraved pooja plate for festivals and gifting.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/919784715709?text=Hi%20JK%20Jewellers,%20I'm%20interested%20in%20the%20Sterling%20Silver%20Pooja%20Thali." target="_blank" class="btn-whatsapp-inquiry"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                            <a href="tel:9784715709" class="btn-call-inquiry"><i class="fa-solid fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card reveal fade-up delay-3" data-category="bridal" data-price="420000">
+                    <div class="product-image">
+                        <span class="product-badge">Bridal Jadau</span>
+                        <img src="images/neckless2.jpeg" alt="Bridal Kundan Emerald Set">
+                    </div>
+                    <div class="product-details">
+                        <h3>Bridal Kundan Emerald Set</h3>
+                        <p>Royal heritage Jadau neckpiece layered with emerald beads.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/919784715709?text=Hi%20JK%20Jewellers,%20I'm%20interested%20in%20the%20Bridal%20Kundan%20Emerald%20Set." target="_blank" class="btn-whatsapp-inquiry"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                            <a href="tel:9784715709" class="btn-call-inquiry"><i class="fa-solid fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="images/logo.jpeg" alt="JK Jewellers logo">
+                    <div class="footer-logo-text">
+                        <h2>JK JEWELLERS</h2>
+                        <span>Chirawa</span>
+                    </div>
+                </div>
+                <p>Establishing landmarks of purity, beauty, and absolute customer trust since generations in Chirawa, Rajasthan. Discover HUID hallmarked items matching your desires.</p>
+                <div class="top-bar-social" style="margin-top: 20px; font-size: 1.1rem;">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="margin-right:15px;"></i></a>
+                    <a href="https://www.instagram.com/jkjewellerschirawa" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram" style="margin-right:15px;"></i></a>
+                    <a href="https://maps.google.com" target="_blank" aria-label="Google Map"><i class="fa-solid fa-map-location-dot"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="blogs.html">Blogs &amp; Guides</a></li>
+                    <li><a href="faq.html">FAQ Page</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Our Collections</h3>
+                <ul class="footer-links">
+                    <li><a href="gold.html">Gold Jewellery</a></li>
+
+                    <li><a href="silver.html">Silver Ornaments</a></li>
+                    <li><a href="bridal.html">Bridal Wear</a></li>
+                    <li><a href="collections.html?cat=temple">Temple Jewellery</a></li>
+                    <li><a href="collections.html?cat=investment">Gold Coins</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to receive styling guides, gold rate updates, and exclusive design launches.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                    <input type="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+                    <button type="submit">Join</button>
+                </form>
+                <div style="margin-top:20px; border-top:1px dashed rgba(232, 220, 196, 0.2); padding-top:15px;">
+                    <span style="display:block; font-size:0.75rem; color:var(--color-secondary); font-weight:600; text-transform:uppercase; letter-spacing:1px; margin-bottom:5px;">Working Hours:</span>
+                    <span style="display:block; font-size:0.8rem; color:rgba(250,247,242,0.7);">Sun - Sat: 9:00 AM - 8:00 PM</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 JK Jewellers Chirawa. All rights reserved. | Created by <a href="https://sigmaweb.in" target="_blank" rel="noopener noreferrer" style="color: var(--color-secondary); text-decoration: underline;">SigmaWeb</a></p>
+                <ul class="footer-bottom-links">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions (WhatsApp & Call) -->
+    <div class="floating-actions">
+        <a href="https://wa.me/919784715709" class="floating-btn floating-whatsapp floating-icon" target="_blank" aria-label="Inquire on WhatsApp">
+            <svg viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.852.002-2.63-1.023-5.101-2.883-6.963C16.688 1.957 14.217.932 11.59.932c-5.442 0-9.87 4.42-9.874 9.855-.001 1.758.485 3.479 1.41 4.98l-.995 3.633 3.732-.979zm11.58-6.18c-.295-.148-1.748-.862-2.019-.962-.27-.1-.468-.148-.665.148-.197.296-.764.962-.937 1.16-.172.196-.345.22-.64.072-.295-.148-1.248-.46-2.378-1.467-.88-.785-1.474-1.753-1.647-2.05-.172-.296-.018-.456.13-.603.132-.133.296-.346.444-.518.148-.172.197-.296.296-.493.1-.2.05-.37-.025-.518-.075-.148-.665-1.601-.913-2.196-.24-.58-.487-.5-.665-.51-.172-.007-.37-.01-.567-.01-.197 0-.518.073-.788.37-.27.296-1.034 1.011-1.034 2.467 0 1.456 1.059 2.861 1.207 3.058.148.197 2.085 3.182 5.05 4.464.705.305 1.255.487 1.683.623.708.226 1.353.193 1.862.118.57-.085 1.748-.715 1.995-1.4.245-.688.245-1.282.172-1.4-.074-.118-.27-.216-.566-.363z"/>
+            </svg>
+        </a>
+        <a href="tel:9784715709" class="floating-btn floating-call floating-icon" aria-label="Direct Call JK Jewellers">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <button class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    
+    <!-- Inline Filter Logic for fast execution -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            const priceSorter = document.getElementById('priceSorter');
+            const productsGrid = document.getElementById('productsGrid');
+
+            // Category filtering
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const category = btn.getAttribute('data-filter');
+                    
+                    productCards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+                        if (category === 'all' || cardCategory === category) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Sorting logic
+            if (priceSorter && productsGrid) {
+                priceSorter.addEventListener('change', () => {
+                    const sortingVal = priceSorter.value;
+                    const cardsArray = Array.from(productCards);
+
+                    if (sortingVal === 'low-to-high') {
+                        cardsArray.sort((a, b) => parseFloat(a.getAttribute('data-price')) - parseFloat(b.getAttribute('data-price')));
+                    } else if (sortingVal === 'high-to-low') {
+                        cardsArray.sort((a, b) => parseFloat(b.getAttribute('data-price')) - parseFloat(a.getAttribute('data-price')));
+                    }
+                    
+                    // Re-append items in sorted order
+                    cardsArray.forEach(card => productsGrid.appendChild(card));
+                });
+            }
+
+            // Read URL Query String to filter automatically
+            const urlParams = new URLSearchParams(window.location.search);
+            const initialFilter = urlParams.get('cat');
+            if (initialFilter) {
+                const targetBtn = Array.from(filterBtns).find(btn => btn.getAttribute('data-filter') === initialFilter.toLowerCase());
+                if (targetBtn) {
+                    targetBtn.click();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
